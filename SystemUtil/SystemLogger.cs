@@ -36,11 +36,11 @@ namespace RightEdge.Util
             string logFileName;
             if (_systemData.LiveMode)
             {
-                logFileName = Path.Combine(systemDirectory, "LiveActivityLog_" + currentTime.ToString("yyyy'-'MM'-'dd") + ".txt");
+                logFileName = Path.Combine(systemDirectory, "LiveSystemLog_" + currentTime.ToString("yyyy'-'MM'-'dd") + ".txt");
             }
             else
             {
-                logFileName = Path.Combine(systemDirectory, "SimActivityLog_" + _systemStartTime.ToString("yyyy'-'MM'-'dd' 'HH'-'mm'-'ss") + ".txt");
+                logFileName = Path.Combine(systemDirectory, "SimSystemLog_" + _systemStartTime.ToString("yyyy'-'MM'-'dd' 'HH'-'mm'-'ss") + ".txt");
             }
 
             string sourceString = string.Empty;
